@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides App</title>
+    <link rel="stylesheet" href="frame.css">
+    <link rel="stylesheet" href="editor.css">
+
+</head>
+
+<body>
+    <div class="top-bar"></div>
+    <div class="container">
+        <div class="side-bar">
+            <div class="slide" draggable="true" id="selected-slide">1</div>
+            <div class="slide" draggable="true">2</div>
+            <div class="slide" draggable="true">3</div>
+        </div>
+        <div class="main-content">
+            <svg viewBox="0 0 1280 720" id="editor">
+                <foreignObject width="1280" height="720">
+                    <div class="draggable">
+                        Hello
+                        <div class="resizable-handle"></div>
+                    </div>
+                    <div class="draggable">
+                        Xin chao
+                        <div class="resizable-handle"></div>
+                    </div>
+
+                    <div id="selectionBox"></div>
+
+                    <div class="center-line vertical-center" id="verticalCenterLine"></div>
+                    <div class="center-line horizontal-center" id="horizontalCenterLine"></div>
+
+                    <div class="center-line" id="frameLeft"></div>
+                    <div class="center-line" id="frameRight"></div>
+
+                    <div class="center-line" id="frameTop"></div>
+                    <div class="center-line" id="frameBottom"></div>
+                </foreignObject>
+            </svg>
+        </div>
+    </div>
+    <script src="frame.js"></script>
+    <script src="editor.js"></script>
+
+</body>
+
+</html>

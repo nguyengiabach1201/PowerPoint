@@ -1,0 +1,86 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    user-select: none;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    /* border: 1px dashed black; */
+    position: absolute;
+    cursor: move;
+}
+
+.draggable#selected-object {
+    box-shadow: inset -2px 0 0 #1e7cf2, inset 0 -2px 0 #1e7cf2, inset 2px 0 0 #1e7cf2, inset 0 2px 0 #1e7cf2;
+    /* border: 2px solid #1e7cf2; */
+}
+
+.draggable#selected-object>.resizable-handle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    cursor: se-resize;
+}
+
+#selectionBox {
+    border: 2px dashed #000;
+    position: absolute;
+    display: none;
+    background-color: rgba(173, 216, 230, 0.3);
+}
+
+.center-line {
+    position: absolute;
+    background-color: #1e7cf2;
+    display: none;
+}
+
+#verticalCenterLine {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+}
+
+#horizontalCenterLine {
+    height: 2px;
+    width: 100%;
+    top: 50%;
+}
+
+#frameLeft {
+    width: 2px;
+    height: calc(100% - 200px);
+    left: 100px;
+    top: 100px;
+}
+
+#frameRight {
+    width: 2px;
+    height: calc(100% - 200px);
+    right: 100px;
+    top: 100px;
+}
+
+#frameTop {
+    height: 2px;
+    width: calc(100% - 200px);
+    top: 100px;
+    left: 100px;
+}
+
+#frameBottom {
+    height: 2px;
+    width: calc(100% - 200px);
+    bottom: 100px;
+    left: 100px;
+}

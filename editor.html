@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable and Resizable Element</title>
+
+    <link rel="stylesheet" href="editor.css">
+</head>
+
+<body style="margin: 0;">
+    <svg viewBox="0 0 1280 720" id="editor">
+        <foreignObject width="1280" height="720" style="width: 100%;">
+            <div class="draggable">
+                Hello
+                <div class="resizable-handle"></div>
+            </div>
+            <div class="draggable">
+                Xin chao
+                <div class="resizable-handle"></div>
+            </div>
+
+            <div id="selectionBox"></div>
+
+            <div class="center-line" id="verticalCenterLine"></div>
+            <div class="center-line" id="horizontalCenterLine"></div>
+            <div class="center-line" id="frameLeft" style="display: block;"></div>
+        </foreignObject>
+    </svg>
+    <!-- <div class="draggable">
+        Hello
+        <div class="resizable-handle"></div>
+    </div>
+    <div class="draggable">
+        Xin chao
+        <div class="resizable-handle"></div>
+    </div>
+
+    <div id="selectionBox"></div> -->
+
+    <script src="editor.js"></script>
+</body>
+
+</html>
